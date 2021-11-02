@@ -7,79 +7,51 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-// A class to represent a disjoint set
+/**
+ * This class represents the Kruskal Algorithm which is used to build the dungeon.
+ */
 class KruskalAlgo {
-  List<Edge> MST;
-  private final Map<Integer, Integer> parent = new HashMap<>();
 
-  //constructor
-  public KruskalAlgo(List<Edge> edge, int n) {
-    kruskalAlgo(edge, n);
-  }
+  private Map<Integer, Integer> parent;
 
-  public KruskalAlgo() {
-  }
-
-  // perform MakeSet operation
-  private void makeSet(int N) {
-    // create `N` disjoint sets (one for each vertex)
-    for (int i = 0; i < N; i++) {
+  private void makeSet(int n) {
+    parent = new HashMap<Integer, Integer>();
+    for (int i = 0; i < n; i++) {
       parent.put(i, i);
     }
   }
 
-  // Find the root of the set in which element `k` belongs
-  private int Find(int k) {
-    // if `k` is root
+  private int find(int k) {
     if (parent.get(k) == k) {
       return k;
     }
-    // recur for the parent until we find the root
-    return Find(parent.get(k));
+    return find(parent.get(k));
   }
 
-  // Perform Union of two subsets
-  private void Union(int a, int b) {
-    // find the root of the sets in which elements
-    // `x` and `y` belongs
-    int x = Find(a);
-    int y = Find(b);
+  private void union(int a, int b) {
+    int x = find(a);
+    int y = find(b);
     parent.put(x, y);
   }
 
-  // Function to construct MST using Kruskal’s algorithm
-  public List<Edge> kruskalAlgo(List<Edge> edges, int N) {
-    // stores the edges present in MST
-    MST = new ArrayList();
-
-    // Initialize `DisjointSet` class.
-    // create a singleton set for each element of the universe.
+  public List<Edge> kruskalAlgo(List<Edge> edges, int n) {
+    List<Edge> mst = new ArrayList<Edge>();
     KruskalAlgo ds = new KruskalAlgo();
-    ds.makeSet(N);
+    ds.makeSet(n);
 
     int index = 0;
-
-    // sort edges by increasing weight
     Collections.sort(edges, Comparator.comparingInt(e -> e.getWeight()));
 
-    // MST contains exactly `V-1` edges
-    while (MST.size() != N - 1) {
-      // consider the next edge with minimum weight from the graph
-      Edge next_edge = edges.get(index++);
+    while (mst.size() != n - 1) {
+      Edge nextEdge = edges.get(index++);
+      int x = ds.find(nextEdge.getSrc());
+      int y = ds.find(nextEdge.getDest());
 
-      // find the root of the sets to which two endpoints
-      // vertices of the next edge belongs
-      int x = ds.Find(next_edge.getSrc());
-      int y = ds.Find(next_edge.getDest());
-
-      // if both endpoints have different parents, they belong to
-      // different connected components and can be included in MST
       if (x != y) {
-        MST.add(next_edge);
-        ds.Union(x, y);
+        mst.add(nextEdge);
+        ds.union(x, y);
       }
     }
-    System.out.println("mst list: " + MST);
-    return MST;
+    return new ArrayList<Edge>(mst);
   }
 }

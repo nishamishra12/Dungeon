@@ -1,6 +1,13 @@
 package randomizer;
 
-public class FixedRandomizer implements Randomizer {
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * This class represents the fixed random generator class which implements all the methods
+ * of the interface and is used to calculate fixed random numbers.
+ */
+public class FixedRandomizer<T> implements Randomizer<T> {
 
   private final int[] arr;
   private int index;
@@ -23,6 +30,14 @@ public class FixedRandomizer implements Randomizer {
     int val = arr[index++];
     index = index >= arr.length ? 0 : index;
     return val;
+  }
+
+  /**
+   * {@inheritDoc}
+   */
+  @Override
+  public List<T> shuffleList(List<T> list) {
+    return new ArrayList<T>(list);
   }
 
 }

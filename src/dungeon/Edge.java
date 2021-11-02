@@ -1,11 +1,14 @@
 package dungeon;
 
-class Edge
-{
-  private int src, dest, weight;
+/**
+ * This class represents an edge in a dungeon with its source, destination, and weight.
+ */
+class Edge {
+  private int src;
+  private int dest;
+  private int weight;
 
-  public Edge(int src, int dest, int weight)
-  {
+  public Edge(int src, int dest, int weight) {
     this.src = src;
     this.dest = dest;
     this.weight = weight;
@@ -27,5 +30,4 @@ class Edge
   public int getWeight() {
     return weight;
   }
-
 }

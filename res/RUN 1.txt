@@ -1,0 +1,311 @@
+RUN 1
+*********** Dungeon Created ***************
+
+CAVE: 0
+-->SOUTH Neighbor: CAVE: 6
+
+CAVE: 1
+-->SOUTH Neighbor: CAVE: 7
+
+CAVE: 2
+-->SOUTH Neighbor: CAVE: 8
+
+CAVE: 3
+-->SOUTH Neighbor: TUNNEL: 9
+
+CAVE: 4
+-->SOUTH Neighbor: CAVE: 10
+
+CAVE: 5
+-->SOUTH Neighbor: TUNNEL: 11
+
+CAVE: 6
+-->NORTH Neighbor: CAVE: 0
+-->SOUTH Neighbor: CAVE: 12
+-->EAST Neighbor: CAVE: 7
+
+CAVE: 7
+-->NORTH Neighbor: CAVE: 1
+-->EAST Neighbor: CAVE: 8
+-->WEST Neighbor: CAVE: 6
+
+CAVE: 8
+-->NORTH Neighbor: CAVE: 2
+-->EAST Neighbor: TUNNEL: 9
+-->WEST Neighbor: CAVE: 7
+
+TUNNEL: 9
+-->NORTH Neighbor: CAVE: 3
+-->WEST Neighbor: CAVE: 8
+
+CAVE: 10
+-->NORTH Neighbor: CAVE: 4
+-->SOUTH Neighbor: CAVE: 16
+-->EAST Neighbor: TUNNEL: 11
+
+TUNNEL: 11
+-->NORTH Neighbor: CAVE: 5
+-->WEST Neighbor: CAVE: 10
+
+CAVE: 12
+-->NORTH Neighbor: CAVE: 6
+-->SOUTH Neighbor: CAVE: 18
+-->EAST Neighbor: TUNNEL: 13
+
+TUNNEL: 13
+-->EAST Neighbor: CAVE: 14
+-->WEST Neighbor: CAVE: 12
+
+CAVE: 14
+-->SOUTH Neighbor: CAVE: 20
+-->EAST Neighbor: TUNNEL: 15
+-->WEST Neighbor: TUNNEL: 13
+
+TUNNEL: 15
+-->EAST Neighbor: CAVE: 16
+-->WEST Neighbor: CAVE: 14
+
+CAVE: 16
+-->NORTH Neighbor: CAVE: 10
+-->EAST Neighbor: TUNNEL: 17
+-->WEST Neighbor: TUNNEL: 15
+
+TUNNEL: 17
+-->SOUTH Neighbor: CAVE: 23
+-->WEST Neighbor: CAVE: 16
+
+CAVE: 18
+-->NORTH Neighbor: CAVE: 12
+-->SOUTH Neighbor: TUNNEL: 24
+-->EAST Neighbor: TUNNEL: 19
+
+TUNNEL: 19
+-->SOUTH Neighbor: CAVE: 25
+-->WEST Neighbor: CAVE: 18
+
+CAVE: 20
+-->NORTH Neighbor: CAVE: 14
+-->SOUTH Neighbor: CAVE: 26
+-->EAST Neighbor: CAVE: 21
+
+CAVE: 21
+-->WEST Neighbor: CAVE: 20
+
+CAVE: 22
+-->EAST Neighbor: CAVE: 23
+
+CAVE: 23
+-->NORTH Neighbor: TUNNEL: 17
+-->SOUTH Neighbor: TUNNEL: 29
+-->WEST Neighbor: CAVE: 22
+
+TUNNEL: 24
+-->NORTH Neighbor: CAVE: 18
+-->EAST Neighbor: CAVE: 25
+
+CAVE: 25
+-->NORTH Neighbor: TUNNEL: 19
+-->EAST Neighbor: CAVE: 26
+-->WEST Neighbor: TUNNEL: 24
+
+CAVE: 26
+-->NORTH Neighbor: CAVE: 20
+-->EAST Neighbor: CAVE: 27
+-->WEST Neighbor: CAVE: 25
+
+CAVE: 27
+-->WEST Neighbor: CAVE: 26
+
+CAVE: 28
+-->EAST Neighbor: TUNNEL: 29
+
+TUNNEL: 29
+-->NORTH Neighbor: CAVE: 23
+-->WEST Neighbor: CAVE: 28
+
+*************** Game Begins ***************
+Start Cave: 6
+End Cave: 28
+The player is in CAVE: 6
+Player has no treasure
+
+Treasure found in current cave.
+Ruby
+Ruby
+There is treasure in the cave. Do you want to pick it up? (Y/N)
+Y
+
+Player successfully picked up the treasure
+
+Next possible moves: 
+North
+South
+East
+
+Please select your next move
+
+Enter N: North 
+Enter S: South 
+Enter E: East 
+Enter W: West
+S
+Player moved
+The player is in CAVE: 12
+Player has following treasures: RUBY: 2
+
+Treasure found in current cave.
+Ruby
+Ruby
+Ruby
+There is treasure in the cave. Do you want to pick it up? (Y/N)
+Y
+
+Player successfully picked up the treasure
+
+Next possible moves: 
+North
+South
+East
+
+Please select your next move
+
+Enter N: North 
+Enter S: South 
+Enter E: East 
+Enter W: West
+E
+Player moved
+The player is in TUNNEL: 13
+Player has following treasures: RUBY: 5
+
+Next possible moves: 
+East
+West
+
+Please select your next move
+
+Enter N: North 
+Enter S: South 
+Enter E: East 
+Enter W: West
+E
+Player moved
+The player is in CAVE: 14
+Player has following treasures: RUBY: 5
+
+Treasure found in current cave.
+Ruby
+Sapphire
+Diamond
+There is treasure in the cave. Do you want to pick it up? (Y/N)
+Y
+
+Player successfully picked up the treasure
+
+Next possible moves: 
+South
+East
+West
+
+Please select your next move
+
+Enter N: North 
+Enter S: South 
+Enter E: East 
+Enter W: West
+E
+Player moved
+The player is in TUNNEL: 15
+Player has following treasures: DIAMOND: 1 RUBY: 6 SAPPHIRE: 1
+
+Next possible moves: 
+East
+West
+
+Please select your next move
+
+Enter N: North 
+Enter S: South 
+Enter E: East 
+Enter W: West
+E
+Player moved
+The player is in CAVE: 16
+Player has following treasures: DIAMOND: 1 RUBY: 6 SAPPHIRE: 1
+
+Treasure found in current cave.
+Ruby
+There is treasure in the cave. Do you want to pick it up? (Y/N)
+Y
+
+Player successfully picked up the treasure
+
+Next possible moves: 
+North
+East
+West
+
+Please select your next move
+
+Enter N: North 
+Enter S: South 
+Enter E: East 
+Enter W: West
+E
+Player moved
+The player is in TUNNEL: 17
+Player has following treasures: DIAMOND: 1 RUBY: 7 SAPPHIRE: 1
+
+Next possible moves: 
+South
+West
+
+Please select your next move
+
+Enter N: North 
+Enter S: South 
+Enter E: East 
+Enter W: West
+S
+Player moved
+The player is in CAVE: 23
+Player has following treasures: DIAMOND: 1 RUBY: 7 SAPPHIRE: 1
+
+Treasure found in current cave.
+Sapphire
+Sapphire
+Sapphire
+There is treasure in the cave. Do you want to pick it up? (Y/N)
+N
+
+Next possible moves: 
+North
+South
+West
+
+Please select your next move
+
+Enter N: North 
+Enter S: South 
+Enter E: East 
+Enter W: West
+S
+Player moved
+The player is in TUNNEL: 29
+Player has following treasures: DIAMOND: 1 RUBY: 7 SAPPHIRE: 1
+
+Next possible moves: 
+North
+West
+
+Please select your next move
+
+Enter N: North 
+Enter S: South 
+Enter E: East 
+Enter W: West
+W
+Player moved
+******** Player has reached the destination!! ******
+
+Process finished with exit code 0

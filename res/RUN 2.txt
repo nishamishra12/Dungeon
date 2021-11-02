@@ -1,0 +1,345 @@
+RUN 2
+*********** Dungeon Created ***************
+
+CAVE: 0
+-->EAST Neighbor: TUNNEL: 1
+
+TUNNEL: 1
+-->SOUTH Neighbor: CAVE: 5
+-->WEST Neighbor: CAVE: 0
+
+CAVE: 2
+-->SOUTH Neighbor: CAVE: 6
+
+TUNNEL: 3
+-->NORTH Neighbor: TUNNEL: 15
+-->SOUTH Neighbor: TUNNEL: 7
+
+TUNNEL: 4
+-->EAST Neighbor: CAVE: 5
+-->WEST Neighbor: TUNNEL: 7
+
+CAVE: 5
+-->NORTH Neighbor: TUNNEL: 1
+-->SOUTH Neighbor: CAVE: 9
+-->EAST Neighbor: CAVE: 6
+-->WEST Neighbor: TUNNEL: 4
+
+CAVE: 6
+-->NORTH Neighbor: CAVE: 2
+-->SOUTH Neighbor: TUNNEL: 10
+-->WEST Neighbor: CAVE: 5
+
+TUNNEL: 7
+-->NORTH Neighbor: TUNNEL: 3
+-->EAST Neighbor: TUNNEL: 4
+
+CAVE: 8
+-->SOUTH Neighbor: CAVE: 12
+-->EAST Neighbor: CAVE: 9
+-->WEST Neighbor: TUNNEL: 11
+
+CAVE: 9
+-->NORTH Neighbor: CAVE: 5
+-->SOUTH Neighbor: TUNNEL: 13
+-->EAST Neighbor: TUNNEL: 10
+-->WEST Neighbor: CAVE: 8
+
+TUNNEL: 10
+-->NORTH Neighbor: CAVE: 6
+-->WEST Neighbor: CAVE: 9
+
+TUNNEL: 11
+-->SOUTH Neighbor: TUNNEL: 15
+-->EAST Neighbor: CAVE: 8
+
+CAVE: 12
+-->NORTH Neighbor: CAVE: 8
+
+TUNNEL: 13
+-->NORTH Neighbor: CAVE: 9
+-->EAST Neighbor: CAVE: 14
+
+CAVE: 14
+-->WEST Neighbor: TUNNEL: 13
+
+TUNNEL: 15
+-->NORTH Neighbor: TUNNEL: 11
+-->SOUTH Neighbor: TUNNEL: 3
+
+*************** Game Begins ***************
+Start Cave: 0
+End Cave: 14
+The player is in CAVE: 0
+Player has no treasure
+
+Treasure found in current cave.
+Diamond
+There is treasure in the cave. Do you want to pick it up? (Y/N)
+Y
+Player successfully picked up the treasure
+
+Next possible moves: 
+East
+Please select your next move
+Enter N: North, Enter S: South, Enter E: East, Enter W: West
+E
+Player moved
+
+
+The player is in TUNNEL: 1
+Player has following treasures: DIAMOND: 1
+
+Next possible moves: 
+South
+West
+Please select your next move
+Enter N: North, Enter S: South, Enter E: East, Enter W: West
+S
+Player moved
+
+
+The player is in CAVE: 5
+Player has following treasures: DIAMOND: 1
+
+Treasure found in current cave.
+Diamond
+Diamond
+Diamond
+There is treasure in the cave. Do you want to pick it up? (Y/N)
+Y
+Player successfully picked up the treasure
+
+Next possible moves: 
+North
+South
+East
+West
+Please select your next move
+Enter N: North, Enter S: South, Enter E: East, Enter W: West
+W
+Player moved
+
+
+The player is in TUNNEL: 4
+Player has following treasures: DIAMOND: 4
+
+Next possible moves: 
+East
+West
+Please select your next move
+Enter N: North, Enter S: South, Enter E: East, Enter W: West
+W
+Player moved
+
+
+The player is in TUNNEL: 7
+Player has following treasures: DIAMOND: 4
+
+Next possible moves: 
+North
+East
+Please select your next move
+Enter N: North, Enter S: South, Enter E: East, Enter W: West
+N
+Player moved
+
+
+The player is in TUNNEL: 3
+Player has following treasures: DIAMOND: 4
+
+Next possible moves: 
+North
+South
+Please select your next move
+Enter N: North, Enter S: South, Enter E: East, Enter W: West
+N
+Player moved
+
+
+The player is in TUNNEL: 15
+Player has following treasures: DIAMOND: 4
+
+Next possible moves: 
+North
+South
+Please select your next move
+Enter N: North, Enter S: South, Enter E: East, Enter W: West
+N
+Player moved
+
+
+The player is in TUNNEL: 11
+Player has following treasures: DIAMOND: 4
+
+Next possible moves: 
+South
+East
+Please select your next move
+Enter N: North, Enter S: South, Enter E: East, Enter W: West
+E
+Player moved
+
+
+The player is in CAVE: 8
+Player has following treasures: DIAMOND: 4
+
+Treasure found in current cave.
+Ruby
+Diamond
+There is treasure in the cave. Do you want to pick it up? (Y/N)
+Y
+Player successfully picked up the treasure
+
+Next possible moves: 
+South
+East
+West
+Please select your next move
+Enter N: North, Enter S: South, Enter E: East, Enter W: West
+S
+Player moved
+
+
+The player is in CAVE: 12
+Player has following treasures: DIAMOND: 5 RUBY: 1
+
+Treasure found in current cave.
+Ruby
+Ruby
+There is treasure in the cave. Do you want to pick it up? (Y/N)
+Y
+Player successfully picked up the treasure
+
+Next possible moves: 
+North
+Please select your next move
+Enter N: North, Enter S: South, Enter E: East, Enter W: West
+N
+Player moved
+
+
+The player is in CAVE: 8
+Player has following treasures: DIAMOND: 5 RUBY: 3
+
+Next possible moves: 
+South
+East
+West
+Please select your next move
+Enter N: North, Enter S: South, Enter E: East, Enter W: West
+E
+Player moved
+
+
+The player is in CAVE: 9
+Player has following treasures: DIAMOND: 5 RUBY: 3
+
+Treasure found in current cave.
+Diamond
+Diamond
+There is treasure in the cave. Do you want to pick it up? (Y/N)
+Y
+Player successfully picked up the treasure
+
+Next possible moves: 
+North
+South
+East
+West
+Please select your next move
+Enter N: North, Enter S: South, Enter E: East, Enter W: West
+E
+Player moved
+
+
+The player is in TUNNEL: 10
+Player has following treasures: DIAMOND: 7 RUBY: 3
+
+Next possible moves: 
+North
+West
+Please select your next move
+Enter N: North, Enter S: South, Enter E: East, Enter W: West
+N
+Player moved
+
+
+The player is in CAVE: 6
+Player has following treasures: DIAMOND: 7 RUBY: 3
+
+Next possible moves: 
+North
+South
+West
+Please select your next move
+Enter N: North, Enter S: South, Enter E: East, Enter W: West
+N
+Player moved
+
+
+The player is in CAVE: 2
+Player has following treasures: DIAMOND: 7 RUBY: 3
+
+Next possible moves: 
+South
+Please select your next move
+Enter N: North, Enter S: South, Enter E: East, Enter W: West
+S
+Player moved
+
+
+The player is in CAVE: 6
+Player has following treasures: DIAMOND: 7 RUBY: 3
+
+Next possible moves: 
+North
+South
+West
+Please select your next move
+Enter N: North, Enter S: South, Enter E: East, Enter W: West
+S
+Player moved
+
+
+The player is in TUNNEL: 10
+Player has following treasures: DIAMOND: 7 RUBY: 3
+
+Next possible moves: 
+North
+West
+Please select your next move
+Enter N: North, Enter S: South, Enter E: East, Enter W: West
+W
+Player moved
+
+
+The player is in CAVE: 9
+Player has following treasures: DIAMOND: 7 RUBY: 3
+
+Next possible moves: 
+North
+South
+East
+West
+Please select your next move
+Enter N: North, Enter S: South, Enter E: East, Enter W: West
+S
+Player moved
+
+
+The player is in TUNNEL: 13
+Player has following treasures: DIAMOND: 7 RUBY: 3
+
+Next possible moves: 
+North
+East
+Please select your next move
+Enter N: North, Enter S: South, Enter E: East, Enter W: West
+E
+Player moved
+
+
+******** Player has reached the destination!! ******
+
+Process finished with exit code 0

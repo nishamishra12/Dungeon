@@ -1,5 +1,8 @@
-package location;
+package dungeon;
 
+/**
+ * This is an enumeration for the type of location present in the dungeon.
+ */
 public enum LocationType {
 
   CAVE("Cave"),
