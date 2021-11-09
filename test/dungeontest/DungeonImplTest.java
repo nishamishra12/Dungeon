@@ -499,8 +499,7 @@ public class DungeonImplTest {
   public void getTreasureDescriptionWrapping() {
     dungeonW = new DungeonImpl(3, 4, 4, 20,
             true, new FixedRandomizer(2, 3, 4));
-    assertEquals("\n" +
-                    "Treasure found in current cave.\n"
+    assertEquals("\n" + "Treasure found in current cave.\n"
                     + "Ruby\n" + "Diamond\n" + "Sapphire\n" + "Ruby\n"
                     + "There is treasure in the cave. Do you want to pick it up? (Y/N)",
             dungeonW.getTreasureDescription());

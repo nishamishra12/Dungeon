@@ -137,7 +137,8 @@ public class DungeonImpl implements Dungeon {
       for (int j = 0; j < mazeList.size(); j++) {
         if (locationList.get(i).getId() == mazeList.get(j).getSrc()) {
           if (mazeList.get(j).getDest() - mazeList.get(j).getSrc() == 1) {
-            locationList.get(i).addNeighbors(Direction.EAST, locationList.get(mazeList.get(j).getDest()));
+            locationList.get(i).addNeighbors(Direction.EAST,
+                    locationList.get(mazeList.get(j).getDest()));
             locationList.get(mazeList.get(j).getDest())
                     .addNeighbors(Direction.WEST, locationList.get(i));
           } else if (mazeList.get(j).getDest() - mazeList.get(j).getSrc()
@@ -240,11 +241,11 @@ public class DungeonImpl implements Dungeon {
     }
 
     LinkedList<Location> queue = new LinkedList();
-    Map<Location, Integer> levelMap = new HashMap<>();
+    Map<Location, Integer> locationLevelMap = new HashMap<>();
 
     src.updateVisit(true);
     queue.add(src);
-    levelMap.put(src, 0);
+    locationLevelMap.put(src, 0);
 
     while (queue.size() != 0) {
       src = queue.poll();
@@ -256,7 +257,7 @@ public class DungeonImpl implements Dungeon {
         if (!n.isVisited()) {
           n.updateVisit(true);
           queue.add(n);
-          levelMap.put(n, levelMap.get(src) + 1);
+          locationLevelMap.put(n, locationLevelMap.get(src) + 1);
         }
       }
     }
@@ -264,7 +265,7 @@ public class DungeonImpl implements Dungeon {
     for (Location i : locationList) {
       i.updateVisit(false);
     }
-    return new HashMap<>(levelMap);
+    return new HashMap<>(locationLevelMap);
   }
 
   /**

@@ -19,8 +19,8 @@ public class DungeonMain {
     Dungeon dungeon;
     try {
       if (args.length < 5) {
-        throw new IllegalArgumentException("Invalid command line arguments given. " +
-                "Please provide correct arguments");
+        throw new IllegalArgumentException("Invalid command line arguments given. "
+                + "Please provide correct arguments");
       }
       int rows = Integer.parseInt(args[0]);
       int cols = Integer.parseInt(args[1]);
@@ -32,8 +32,8 @@ public class DungeonMain {
       System.out.println("*********** Dungeon Created ***************");
       System.out.println(dungeon.dumpDungeon());
       System.out.println("*************** Game Begins ***************");
-      System.out.println("Start Cave: "+dungeon.getStartCave().getId());
-      System.out.println("End Cave: "+dungeon.getEndCave().getId());
+      System.out.println("Start Cave: " + dungeon.getStartCave().getId());
+      System.out.println("End Cave: " + dungeon.getEndCave().getId());
       Scanner sc = new Scanner(System.in);
       while (!dungeon.hasReachedEnd()) {
         System.out.println(dungeon.getPlayerDescription());
